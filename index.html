@@ -165,12 +165,12 @@
 
     /* ── SAMENWERKINGEN ── */
     #samenwerkingen { background: var(--cream); }
-    .partners-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.4rem; margin-top: 3.5rem; }
-    .partner-card { background: var(--white); border: 1px solid var(--sand); border-radius: 4px; padding: 2rem 1.6rem; transition: border-color .2s, transform .2s, box-shadow .2s; }
+    .partners-grid { display: grid; grid-template-columns: repeat(2, minmax(220px, 1fr)); gap: 1.4rem; margin-top: 3.5rem; }
+    .partner-card { background: #fff8d6; border: 1px solid var(--sand); border-radius: 4px; padding: 2rem 1.6rem; transition: border-color .2s, transform .2s, box-shadow .2s; }
     .partner-card:hover { border-color: var(--orange); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
-    .partner-icon { font-size: 2rem; margin-bottom: 1rem; }
     .partner-card h3 { font-family: var(--ff-head); font-size: 1.1rem; font-weight: 700; text-transform: uppercase; color: var(--navy); margin-bottom: .5rem; }
     .partner-card p { font-size: .88rem; color: var(--muted); line-height: 1.65; }
+    @media (max-width: 720px) { .partners-grid { grid-template-columns: 1fr; } }
 
     /* ── CONTACT ── */
     #contact { background: var(--navy); color: var(--white); }
@@ -367,28 +367,24 @@
     <div class="partners-grid">
 
       <div class="partner-card fade-in">
-        <div class="partner-icon">&#x1F9C0;</div>
         <h3>Kaas &amp; zuivel</h3>
         <p>Onze kernspecialisatie: transport van kaas en andere zuivelproducten voor producenten
         en handelaren in de voedingssector, door heel Nederland.</p>
       </div>
 
       <div class="partner-card fade-in">
-        <div class="partner-icon">&#x1F33E;</div>
         <h3>Landbouwproducten</h3>
         <p>Transport van aardappelen, bieten en graan voor boerenbedrijven en agrarische
         cooperaties in Friesland en omliggende provincies.</p>
       </div>
 
       <div class="partner-card fade-in">
-        <div class="partner-icon">&#x1F41F;</div>
         <h3>Historisch: vistransport</h3>
         <p>De wortels van ons bedrijf liggen in het vistransport. In 1928 reden we de eerste ritten
         voor de Friese visserij &mdash; een traditie die ons karakter bepaalde.</p>
       </div>
 
       <div class="partner-card fade-in">
-        <div class="partner-icon">&#x1F69B;</div>
         <h3>Algemeen vrachtvervoer</h3>
         <p>Naast onze specialisaties verzorgen wij ook algemeen goederenvervoer over de weg,
         zowel regionaal als door heel Nederland.</p>
